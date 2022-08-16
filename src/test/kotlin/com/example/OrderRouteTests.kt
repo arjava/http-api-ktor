@@ -16,4 +16,8 @@ class OrderRouteTests {
         )
         assertEquals(HttpStatusCode.OK, response.status)
     }
+
+    fun testPostOrder() = testApplication {
+
+    }
 }

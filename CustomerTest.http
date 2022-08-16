@@ -1,5 +1,6 @@
 POST http://127.0.0.1:8080/customer
 Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
 {
   "id": "100",
@@ -12,6 +13,7 @@ Content-Type: application/json
 ###
 POST http://127.0.0.1:8080/customer
 Content-Type: application/json
+Content-Type: application/x-www-form-urlencoded
 
 {
   "id": "200",
@@ -37,7 +39,8 @@ GET http://127.0.0.1:8080/customer
 Accept: application/json
 
 ###
-GET http://127.0.0.1:8080/customer/200
+GET http://127.0.0.1:8080/customer/101
+X-Http-Method-Override: DELETE
 Accept: application/json
 
 ###

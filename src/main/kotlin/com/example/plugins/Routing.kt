@@ -1,11 +1,9 @@
 package com.example.plugins
 
-import com.example.routes.customerRouting
-import com.example.routes.getOrderRoute
-import com.example.routes.listOrdersRoute
-import com.example.routes.totalizeOrderRoute
+import com.example.routes.*
 import io.ktor.server.routing.*
 import io.ktor.server.application.*
+import io.ktor.server.http.content.*
 
 fun Application.configureRouting() {
     routing {
@@ -13,5 +11,9 @@ fun Application.configureRouting() {
         listOrdersRoute()
         getOrderRoute()
         totalizeOrderRoute()
+        filesRouting()
+        static{
+            resources("static")
+        }
     }
 }
