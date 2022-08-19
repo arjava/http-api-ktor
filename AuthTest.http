@@ -1,0 +1,10 @@
+POST http://172.17.4.56:8080/login
+Content-Type: application/x-www-form-urlencoded
+
+username=RaflyAom&password=qwe321
+
+###register
+POST http://0.0.0.0:8080/signup
+Content-Type: application/x-www-form-urlencoded
+
+username=RaflyAom&password=qwe321&email=raflyAom@gmail.com&phone=089882898998
